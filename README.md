@@ -8,7 +8,6 @@
 > **Control your Android phone with natural language.** An AI agent that understands and executes tasks on your device.
 
 ## ✨ Features
-
 - 🗣️ Natural language task execution
 - 📱 Control apps, settings, files via AI
 - 🤖 On-device LLM support (no cloud needed)
@@ -17,7 +16,6 @@
 - 🔒 Privacy-first (local execution)
 
 ## 🚀 Quick Start
-
 ```bash
 git clone https://github.com/axe01010/android-ai-agent.git
 cd android-ai-agent
@@ -25,18 +23,7 @@ pip install -r requirements.txt
 python agent.py
 ```
 
-## 💬 Example Commands
-
-```
-"Open Chrome and search for Python tutorials"
-"Set an alarm for 7 AM tomorrow"
-"Send a WhatsApp message to Mom"
-"Turn on Do Not Disturb for 1 hour"
-"Take a photo and send it to John"
-```
-
 ## 📁 Structure
-
 ```
 android-ai-agent/
 ├── agent.py              # Main agent loop
@@ -52,10 +39,5 @@ android-ai-agent/
 └── README.md
 ```
 
-## 🤝 Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md).
-
 ## 📜 License
-
 MIT
