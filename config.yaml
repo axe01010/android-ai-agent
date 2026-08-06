@@ -1,0 +1,29 @@
+# android-ai-agent configuration
+#
+# All values here are optional; see config.py DEFAULTS for the full schema.
+# Layering (lowest -> highest): baked-in defaults, this file, AAIAGENT_* env
+# variables, CLI flags.
+
+router:
+  unknown_action: "apps"        # plugin used when no route matches
+  fallback_slot: "fallback"
+  case_sensitive: false
+
+execution:
+  dry_run: false                # set true to log actions without running them
+  require_confirmation: false
+  timeout_seconds: 30
+  max_history: 200
+
+logging:
+  level: INFO
+  file: agent.log
+
+bridge:
+  type: mock                    # mock | adb | termux-api
+  adb_host: 127.0.0.1
+  adb_port: 5555
+
+plugins:
+  auto_discover: true
+  disable: []                   # e.g. ["camera"] to turn a plugin off
