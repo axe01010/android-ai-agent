@@ -207,6 +207,24 @@ branch → PR.
 
 Released under the [MIT License](LICENSE). Use it, fork it, learn from it.
 
+
+## Architecture
+
+```mermaid
+flowchart LR
+    U[User / Agent] --> A[Android AI Agent]
+    A --> P[Plugin Manager]
+    P --> S[Settings]
+    P --> M[Messages]
+    P --> C[Camera]
+    A --> E[Executor / Daemon Pool]
+    E --> V[Vision]
+    E --> T[Tools]
+    E --> F[File ops]
+    E --> N[Notifications]
+```
+
+
 ---
 <p align="center">
   <b>Part of the <a href="https://github.com/axe01010/axe01010">Free On-Device AI DevKit</a> stack</b><br>
