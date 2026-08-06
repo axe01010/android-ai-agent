@@ -1,0 +1,18 @@
+{
+  "agent": {
+    "device": "emulator",
+    "log_level": "info",
+    "interactive_prompt": "agent> ",
+    "plugins": {
+      "apps": {
+        "search_engine": "https://www.google.com/search?q="
+      },
+      "camera": {
+        "save_dir": "~/Pictures"
+      },
+      "messages": {
+        "max_results": 5
+      }
+    }
+  }
+}
